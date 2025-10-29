@@ -12,7 +12,7 @@ import hs_module as hs
 # ---------------- Groq API Client ----------------
 # Make sure to set your API key here directly
 from groq import Groq
-chatbot_api = Groq(api_key=)
+chatbot_api = Groq(api_key="insert your groq api key")
 
 def groq_chatbot_reply(user_input, sentiment="neutral"):
     system_message = f"""
@@ -784,4 +784,5 @@ if __name__ == "__main__":
         start_cli_training()
     else:
         print("Invalid choice. Exiting.")
+
 
